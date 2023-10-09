@@ -1,33 +1,35 @@
-using System;
+
 using UnityEngine;
 
 namespace T_Scripts
 {
     public class DestroyWoodenBox : MonoBehaviour
     {
-        [SerializeField] private GameObject _woodBox1;
-        [SerializeField] private GameObject _woodBox2;
-        [SerializeField] private GameObject _woodBox3;
+        [SerializeField]private GameObject[] _box;
+        private GameObject _current;
+        private GameObject _next;
+        private int _index;
+
+        private void Awake()
+        {
+            _current = _box[0];
+            _next = _box[1];
+            _index = 2;
+        }
 
         private void Update()
         {
-            if (_woodBox1)
+            if (Input.GetMouseButtonDown(0) && _index <= _box.Length)
             {
-                if (Input.GetMouseButtonDown(0))
+                _current.SetActive(false);
+                if (_next is not null)
                 {
-                    _woodBox1.SetActive(false);
-                    _woodBox2.SetActive(true);
+                    _next.SetActive(true);
                 }
+                _current = _next;
+                _next = _index < _box.Length ? _box[_index] : null;
+                _index++;
             }
-            else if(_woodBox2)
-            {
-                if (Input.GetMouseButtonDown(0))
-                {
-                    _woodBox2.SetActive(false);
-                    _woodBox3.SetActive(true);
-                }
-            }
-            
         }
     }
 }
