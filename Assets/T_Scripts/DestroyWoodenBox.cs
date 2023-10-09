@@ -19,7 +19,7 @@ namespace T_Scripts
 
         private void Update()
         {
-            if (Input.GetMouseButtonDown(0) && _index <= _box.Length)
+            if (Input.GetMouseButtonDown(0) && _index <= _box.Length)//It's code must be in OnColliderStay()
             {
                 _current.SetActive(false);
                 if (_next is not null)
