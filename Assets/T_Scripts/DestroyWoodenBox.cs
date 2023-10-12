@@ -6,26 +6,28 @@ namespace T_Scripts
     public class DestroyWoodenBox : MonoBehaviour
     {
         [SerializeField]private GameObject[] _box;
-        GameObject _current;
-        GameObject _next;
-        int _index;
+        [SerializeField] private GameObject _partical;
+        [SerializeField] private Transform _spawn;
+        private GameObject _current;
+        private GameObject _next;
+        private int _index;
 
-        void Awake()
+        private void Awake()
         {
             _current = _box[0];
             _next = _box[1];
             _index = 2;
         }
 
-        void Update()
+        private void Update()
         {
-            //It's code must be in OnColliderStay()
-            if (Input.GetMouseButtonDown(0) && _index <= _box.Length)
+            if (Input.GetMouseButtonDown(0) && _index <= _box.Length)//It's code must be in OnColliderStay()
             {
                 _current.SetActive(false);
                 if (_next is not null)
                 {
                     _next.SetActive(true);
+                    Instantiate(_partical,_spawn);
                 }
                 _current = _next;
                 _next = _index < _box.Length ? _box[_index] : null;
