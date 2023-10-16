@@ -1,2 +1,1 @@
- 
-some new text
+definitely new text
