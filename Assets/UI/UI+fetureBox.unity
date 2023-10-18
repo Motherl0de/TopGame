@@ -792,7 +792,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &330585544
 AudioListener:
   m_ObjectHideFlags: 0
@@ -3252,11 +3252,9 @@ SceneRoots:
   - {fileID: 1310113790}
   - {fileID: 3521266406460044435}
   - {fileID: 1423365336274588432}
-<<<<<<< HEAD:Assets/Scenes/SampleScene.unity
   - {fileID: 695509495}
-=======
   - {fileID: 621859886676403110}
   - {fileID: 141767882}
   - {fileID: 48569333}
   - {fileID: 443757874}
->>>>>>> 5caf471 (Merge UI + Box + Player + InteractorSystem):Assets/UI/UI+fetureBox.unity
+  - {fileID: 1289494861}
