@@ -33,7 +33,6 @@ Transform:
   - {fileID: 3531616704720224921}
   - {fileID: 711549123164658288}
   - {fileID: 2695248652887649019}
-  - {fileID: 4423297566905237346}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7864806460694605978
@@ -52,40 +51,6 @@ MonoBehaviour:
   - {fileID: 529607772534845578}
   - {fileID: 4576985365854726243}
   - {fileID: 1386030641042233576}
-  _partical: {fileID: 1195101454212975576, guid: a59f896b2f76bb249876d9312d856942,
-    type: 3}
-  _spawn: {fileID: 4423297566905237346}
---- !u!1 &4462820444374613728
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4423297566905237346}
-  m_Layer: 0
-  m_Name: SpawnBom
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4423297566905237346
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4462820444374613728}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0.129, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 299784256446217025}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &5522920465550668138
 PrefabInstance:
   m_ObjectHideFlags: 0
