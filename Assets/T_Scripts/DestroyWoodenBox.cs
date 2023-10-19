@@ -11,13 +11,13 @@ namespace T_Scripts
         [SerializeField] private Transform _spawn;
         private GameObject _current;
         private GameObject _next;
-        private int _index;
+        private int _pendingIndex;
 
         private void Awake()
         {
             _current = _box[0];
             _next = _box[1];
-            _index = 2;
+            _pendingIndex = 2;
         }
 
         private void Update()
@@ -32,7 +32,7 @@ namespace T_Scripts
 
         private void BreakOnClick()
         {
-            if (Input.GetMouseButtonDown(0) && _index <= _box.Length)
+            if (Input.GetMouseButtonDown(0) && _pendingIndex <= _box.Length)
             {
                 _current.SetActive(false);
                 if (_next is not null)
@@ -42,8 +42,8 @@ namespace T_Scripts
                 }
 
                 _current = _next;
-                _next = _index < _box.Length ? _box[_index] : null;
-                _index++;
+                _next = _pendingIndex < _box.Length ? _box[_pendingIndex] : null;
+                _pendingIndex++;
             }
         }
     }
