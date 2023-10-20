@@ -4034,25 +4034,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-<<<<<<< HEAD
   m_IsActive: 1
-=======
-  m_IsActive: 0
---- !u!114 &1353002859
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1353002858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e49b822a6bcb6c4c8370b043e531d61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  testHealth: 100
-  canvas: {fileID: 1640319330}
->>>>>>> 7826be439b6249ed46ae55c8937c9398e408c63d
 --- !u!54 &1353002860
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4168,7 +4150,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
 --- !u!114 &1353002865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4183,14 +4164,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   testHealth: 100
   canvas: {fileID: 1640319330}
-=======
---- !u!20 &1378315360 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 7402048914441443757, guid: 25040a8c032183d4cb927179448c5545,
-    type: 3}
-  m_PrefabInstance: {fileID: 1047217135}
-  m_PrefabAsset: {fileID: 0}
->>>>>>> 7826be439b6249ed46ae55c8937c9398e408c63d
 --- !u!1001 &1437768048
 PrefabInstance:
   m_ObjectHideFlags: 0
