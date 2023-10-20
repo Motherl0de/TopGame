@@ -21,7 +21,7 @@ public class PausMenu : MonoBehaviour
 
         PausGame = false;
 
-        Player.GetComponent<CameraLook>().enabled = true;
+        //Player.GetComponent<CameraLook>().enabled = true;
 
         PausButton.GetComponent<Button>().interactable = true;
     }
@@ -34,7 +34,7 @@ public class PausMenu : MonoBehaviour
 
         PausGame = true;
 
-        Player.GetComponent<CameraLook>().enabled = false;
+        //Player.GetComponent<CameraLook>().enabled = false;
 
         PausButton.GetComponent<Button>().interactable = false;
 
