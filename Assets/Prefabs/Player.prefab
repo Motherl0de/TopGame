@@ -12,10 +12,7 @@ GameObject:
   - component: {fileID: 5681762770088193321}
   - component: {fileID: 1500726949064658563}
   - component: {fileID: 9000950623026788982}
-  - component: {fileID: 555172586623018533}
-  - component: {fileID: 2057944784101229581}
   - component: {fileID: 747033567026508402}
-  - component: {fileID: 6579473621503165358}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -113,35 +110,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &555172586623018533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 345392054403609202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff6990e79f629504082e8fffe5b688bf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _characterRigidbody: {fileID: 747033567026508402}
-  speed: 10
---- !u!114 &2057944784101229581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 345392054403609202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a04bdc5b8caf90044869107476ffec50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _camera: {fileID: 7402048914441443757}
-  _player: {fileID: 173945293181497781}
-  _sensitivity: 10
 --- !u!54 &747033567026508402
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -169,19 +137,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &6579473621503165358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 345392054403609202}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6d791db4fc2e344cb2f4475384d3464, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textT: {fileID: 0}
 --- !u!1 &4919303249155332119
 GameObject:
   m_ObjectHideFlags: 0
@@ -193,7 +148,6 @@ GameObject:
   - component: {fileID: 5870698082397199988}
   - component: {fileID: 6628265497896709010}
   - component: {fileID: 4158177313453068480}
-  - component: {fileID: 7535226070797002315}
   m_Layer: 0
   m_Name: InteractionDetector
   m_TagString: Untagged
@@ -264,36 +218,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7535226070797002315
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4919303249155332119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73e8bccb31760e4499655826edfa2c4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _enterZone:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6579473621503165358}
-        m_TargetAssemblyTypeName: InteractorManager, Assembly-CSharp
-        m_MethodName: OnTriggerDetected
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  _layers:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!1 &6340803862822817003
 GameObject:
   m_ObjectHideFlags: 0

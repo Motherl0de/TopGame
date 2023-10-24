@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class MovePlayer : MonoBehaviour
 {
-    [SerializeField] private Rigidbody rigidbody;
+    [SerializeField] private Rigidbody _rigidbody;
 
     public float speed = 10f;
 
@@ -20,16 +20,16 @@ public class MovePlayer : MonoBehaviour
 
         Vector3 targetVelocity = transform.TransformDirection(new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"))) * speed;
 
-        if (rigidbody.velocity.y < 0)
+        if (_rigidbody.velocity.y < 0)
         {
-            targetVelocity.y = rigidbody.velocity.y;
+            targetVelocity.y = _rigidbody.velocity.y;
         }
 
-        Vector3 velocity = rigidbody.velocity;
+        Vector3 velocity = _rigidbody.velocity;
 
         Vector3 velocityChange = (targetVelocity - velocity);
 
-        rigidbody.AddForce(velocityChange, ForceMode.Impulse);
+        _rigidbody.AddForce(velocityChange, ForceMode.Impulse);
 
     }
     void FixedUpdate()
