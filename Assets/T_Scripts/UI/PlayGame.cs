@@ -1,15 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PlayGame : MonoBehaviour
+namespace T_Scripts.UI
 {
-
-    public void Play()
+    public class PlayGame : MonoBehaviour
     {
-        SceneManager.LoadScene("UI+fetureBox");
+        public void Play()
+        {
+            SceneManager.LoadScene("GameplayScene");
+        }
     }
-    
-
 }
