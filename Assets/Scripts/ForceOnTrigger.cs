@@ -1,13 +1,9 @@
-
 using UnityEngine;
 
-namespace T_Scripts
+public class ForceOnTrigger : MonoBehaviour
 {
-    public class ForceOnTrigger : MonoBehaviour
+    private void OnTriggerStay(Collider other)
     {
-        private void OnTriggerStay(Collider other)
-        {
-            other.attachedRigidbody.AddForce(Vector3.up * 14.4f);
-        }
+        other.attachedRigidbody.AddForce(Vector3.up * 14.4f);
     }
 }
