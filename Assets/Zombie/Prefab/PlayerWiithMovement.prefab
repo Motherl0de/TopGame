@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3591142632923718918}
   - component: {fileID: 7614988631933048751}
   - component: {fileID: 1494534958444340708}
+  - component: {fileID: 1742754641819652965}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -27,13 +28,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6388454870502728023}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.12980352, y: -0, z: -0, w: 0.9915398}
-  m_LocalPosition: {x: 0.91, y: 14.19, z: -7.16}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1606747317954496584}
-  m_LocalEulerAnglesHint: {x: 14.916, y: 0, z: 0}
+  m_Father: {fileID: 6431654542556412480}
+  m_LocalEulerAnglesHint: {x: 19.393, y: 0, z: 0}
 --- !u!20 &3591142632923718918
 Camera:
   m_ObjectHideFlags: 0
@@ -137,6 +138,19 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!114 &1742754641819652965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6388454870502728023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1d66f46ee3ff7b4da1dc1c6085a5d76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _target: {fileID: 6254987560797750510}
 --- !u!1 &7008010495951583230
 GameObject:
   m_ObjectHideFlags: 0
@@ -167,8 +181,40 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6254987560797750510}
-  - {fileID: 2385970025047179037}
+  - {fileID: 6431654542556412480}
   m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &9156507351196558315
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6431654542556412480}
+  m_Layer: 0
+  m_Name: CameraPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6431654542556412480
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9156507351196558315}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.16842644, y: -0, z: -0, w: 0.98571426}
+  m_LocalPosition: {x: 1.35, y: 13.59, z: -3.9399998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2385970025047179037}
+  m_Father: {fileID: 1606747317954496584}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &6259910937519822882
 PrefabInstance:
@@ -224,6 +270,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 95090565265420528, guid: 43b3bfc3c2f2ff146a8d85e63d0a4e26,
         type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95090565265420528, guid: 43b3bfc3c2f2ff146a8d85e63d0a4e26,
+        type: 3}
       propertyPath: m_ApplyRootMotion
       value: 1
       objectReference: {fileID: 0}
@@ -255,6 +306,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 7775388379573218926}
+    - targetCorrespondingSourceObject: {fileID: 1352753540370996, guid: 43b3bfc3c2f2ff146a8d85e63d0a4e26,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6239924490356427720}
   m_SourcePrefab: {fileID: 100100000, guid: 43b3bfc3c2f2ff146a8d85e63d0a4e26, type: 3}
 --- !u!54 &5945647869987009662 stripped
 Rigidbody:
@@ -281,7 +336,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6258707736419994134}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e37e66cf7dce3ae46ba52abf1d7ebba0, type: 3}
   m_Name: 
@@ -289,3 +344,15 @@ MonoBehaviour:
   _rigidbody: {fileID: 5945647869987009662}
   _speed: 10
   _rotationSpeed: 2
+--- !u!114 &6239924490356427720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6258707736419994134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38a3ca335565f02438aa0308a7183dc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

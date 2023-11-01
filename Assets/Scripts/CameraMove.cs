@@ -6,9 +6,12 @@ public class CameraMove : MonoBehaviour
 {
     private Vector3 _initialRotation;
     private bool _isRotating = false;
+    [SerializeField] private Transform _target;
+    private Vector3 offset;  
 
-    private void Start()
-    {
+    void Start () 
+    {        
+        offset = transform.position - _target.position;
         _initialRotation = transform.rotation.eulerAngles;
     }
 
@@ -33,7 +36,14 @@ public class CameraMove : MonoBehaviour
 
             transform.Rotate(Vector3.up, mouseX);
             transform.Rotate(Vector3.left, mouseY);
+            Vector3 currentRotation = transform.eulerAngles;
+            currentRotation.z = 0;
+            transform.eulerAngles = currentRotation;
         }
+    }
+    void LateUpdate () 
+    {        
+        transform.position = _target.position + offset;
     }
 }
 
