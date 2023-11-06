@@ -1,18 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class CameraMove : MonoBehaviour
 {
-    private Vector3 _initialRotation;
+    private Quaternion _initialRotation;
     private bool _isRotating = false;
-    [SerializeField] private Transform _target;
-    private Vector3 offset;  
+    [SerializeField] private CameraFollow _cameraFollow;
 
     void Start () 
-    {        
-        offset = transform.position - _target.position;
-        _initialRotation = transform.rotation.eulerAngles;
+    {
+        _initialRotation = transform.rotation;
     }
 
     private void Update()
@@ -20,12 +17,14 @@ public class CameraMove : MonoBehaviour
         if (Input.GetMouseButtonDown(1))
         {
             _isRotating = true;
+            _cameraFollow.enabled = false;
         }
         
         if (Input.GetMouseButtonUp(1))
         {
             _isRotating = false;
-            transform.eulerAngles = _initialRotation;
+            _cameraFollow.enabled = true;
+            transform.rotation = _initialRotation;
         }
 
         if (_isRotating)
@@ -41,9 +40,4 @@ public class CameraMove : MonoBehaviour
             transform.eulerAngles = currentRotation;
         }
     }
-    void LateUpdate () 
-    {        
-        transform.position = _target.position + offset;
-    }
 }
-
