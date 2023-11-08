@@ -462,11 +462,11 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1320769219843760273}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 9776c2c565280054689a67587800f1d9, type: 3}
+  m_Avatar: {fileID: 9000000, guid: 2eb6dad61b9a7c14ea919f20f000c136, type: 3}
   m_Controller: {fileID: 9100000, guid: a2ad8092d2cdc2947a045eab7d8d971c, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
@@ -520,8 +520,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.82596105, y: 1.7773247, z: 0.8137118}
-  m_Center: {x: -0.010515849, y: 0.9236056, z: 0.01967287}
+  m_Size: {x: 0.7462265, y: 1.6818562, z: 0.54756594}
+  m_Center: {x: 0.007793188, y: 0.9713399, z: 0.044454496}
 --- !u!114 &5302720244135428300
 MonoBehaviour:
   m_ObjectHideFlags: 0
