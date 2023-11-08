@@ -10,7 +10,7 @@ public class MovePlayer : MonoBehaviour
     [SerializeField] private float _rotationSpeed = 2.0f;
     private Animator _animator;
     private static readonly int Run = Animator.StringToHash("Run");
-    private Animator Anim => _animator ?? GetComponent<Animator>();
+    private Animator Anim => _animator ??= GetComponent<Animator>();
 
     private void Move()
     {
