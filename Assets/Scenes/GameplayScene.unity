@@ -1937,9 +1937,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5764516141376675921, guid: 9108149b2610790459d0672a7788c571,
         type: 3}
+      propertyPath: m_Avatar
+      value: 
+      objectReference: {fileID: 9000000, guid: 2eb6dad61b9a7c14ea919f20f000c136, type: 3}
+    - target: {fileID: 5764516141376675921, guid: 9108149b2610790459d0672a7788c571,
+        type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 92d9c4b5ab07fb54782fc9d1b6ad4049, type: 2}
+      objectReference: {fileID: 9100000, guid: a2ad8092d2cdc2947a045eab7d8d971c, type: 2}
     - target: {fileID: 5764516141376675921, guid: 9108149b2610790459d0672a7788c571,
         type: 3}
       propertyPath: m_ApplyRootMotion
