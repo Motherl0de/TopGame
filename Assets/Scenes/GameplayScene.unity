@@ -359,31 +359,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 28604701361596428, guid: a1bdfb9f6bdd7e54481232798a9818e6,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -25.299988
-      objectReference: {fileID: 0}
-    - target: {fileID: 990581521653369906, guid: a1bdfb9f6bdd7e54481232798a9818e6,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 990581521653369906, guid: a1bdfb9f6bdd7e54481232798a9818e6,
-        type: 3}
-      propertyPath: m_Colors.m_ColorMultiplier
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 990581521653369906, guid: a1bdfb9f6bdd7e54481232798a9818e6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1526498002}
-    - target: {fileID: 990581521653369906, guid: a1bdfb9f6bdd7e54481232798a9818e6,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Pause
-      objectReference: {fileID: 0}
     - target: {fileID: 1376228830164681909, guid: a1bdfb9f6bdd7e54481232798a9818e6,
         type: 3}
       propertyPath: m_Pivot.x
@@ -488,31 +463,11 @@ PrefabInstance:
         type: 3}
       propertyPath: Player
       value: 
-      objectReference: {fileID: 626795806}
+      objectReference: {fileID: 878929479}
     - target: {fileID: 5223529853237159830, guid: a1bdfb9f6bdd7e54481232798a9818e6,
         type: 3}
       propertyPath: m_Name
       value: Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 5223529853237159830, guid: a1bdfb9f6bdd7e54481232798a9818e6,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8242619224356460174, guid: a1bdfb9f6bdd7e54481232798a9818e6,
-        type: 3}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8242619224356460174, guid: a1bdfb9f6bdd7e54481232798a9818e6,
-        type: 3}
-      propertyPath: m_RenderMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8242619224356460174, guid: a1bdfb9f6bdd7e54481232798a9818e6,
-        type: 3}
-      propertyPath: m_VertexColorAlwaysGammaSpace
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -778,12 +733,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &626795806 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6258707736419994134, guid: fca5711655770404ba39f0d6168102a2,
-    type: 3}
-  m_PrefabInstance: {fileID: 4370008093499611050}
-  m_PrefabAsset: {fileID: 0}
 --- !u!43 &637554946
 Mesh:
   m_ObjectHideFlags: 0
@@ -1114,6 +1063,12 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &878929479 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7008010495951583230, guid: fca5711655770404ba39f0d6168102a2,
+    type: 3}
+  m_PrefabInstance: {fileID: 4370008093499611050}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &884770803
 Mesh:
   m_ObjectHideFlags: 0
@@ -1905,18 +1860,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!114 &1526498002 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2297161008815842630, guid: a1bdfb9f6bdd7e54481232798a9818e6,
-    type: 3}
-  m_PrefabInstance: {fileID: 48569333}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c4ceb0d7254273247b505913497c5291, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!43 &1708638483
 Mesh:
   m_ObjectHideFlags: 0

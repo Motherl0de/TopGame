@@ -20,8 +20,10 @@ public class PausMenu : MonoBehaviour
         Time.timeScale = 1.0f;
 
         PausGame = false;
+               
+        Player.GetComponentInChildren<MovePlayer>().enabled = true;
 
-        Player.GetComponent<MovePlayer>().enabled = true;
+        Player.GetComponentInChildren<CameraMove>().enabled = true;
 
         PausButton.GetComponent<Button>().interactable = true;
     }
@@ -34,7 +36,9 @@ public class PausMenu : MonoBehaviour
 
         PausGame = true;
 
-        Player.GetComponent<MovePlayer>().enabled = false;
+        Player.GetComponentInChildren<MovePlayer>().enabled = false;
+
+        Player.GetComponentInChildren<CameraMove>().enabled = false;
 
         PausButton.GetComponent<Button>().interactable = false;
 
@@ -44,7 +48,7 @@ public class PausMenu : MonoBehaviour
     {
         Time.timeScale = 1.0f;
 
-        SceneManager.LoadScene("SceneMenu");
+        SceneManager.LoadScene("MainMenuScene");
     }
 
  
