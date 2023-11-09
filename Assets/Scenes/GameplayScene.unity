@@ -488,7 +488,7 @@ PrefabInstance:
         type: 3}
       propertyPath: Player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 626795806}
     - target: {fileID: 5223529853237159830, guid: a1bdfb9f6bdd7e54481232798a9818e6,
         type: 3}
       propertyPath: m_Name
@@ -778,6 +778,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &626795806 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6258707736419994134, guid: fca5711655770404ba39f0d6168102a2,
+    type: 3}
+  m_PrefabInstance: {fileID: 4370008093499611050}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &637554946
 Mesh:
   m_ObjectHideFlags: 0
