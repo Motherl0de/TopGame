@@ -1,30 +1,62 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.UIElements;
-using static UnityEngine.UIElements.UxmlAttributeDescription;
 
 public class Health : MonoBehaviour
-        
 {
-
     public GameObject healthFill;
-    public int _health;
 
-    public int MaxHealth;
+    public int startingHP = 100;
 
-    public void TakeDamag(int Damag)
+    public int currentHP;
+
+    //public int MaxHealth ;
+
+    private float hpDecrementInterval = 1.0f;
+
+    private float timer;
+
+    public UnityEngine.UI.Image _image_health;
+    private void DecrementHP(int amount)
     {
-        _health -= Damag;
+        currentHP -= amount;
 
-        healthFill.GetComponent<UnityEngine.UI.Image>().fillAmount = (float)(_health / 100f);
+        //Debug.Log("HP: " + currentHP);
 
+        _image_health.fillAmount = currentHP / 100f;
 
-        if (_health <= 0)
+        if (currentHP <= 0)
         {
-            Destroy(gameObject);
+           Debug.Log("Game Over");
+        }
+    }
+
+    //public void TakeDamag(int Damag)
+    //{
+    //    currentHP -= Damag;
+
+    //    healthFill.GetComponent<UnityEngine.UI.Image>().fillAmount = currentHP / 100f;
+
+    //    if (currentHP <= 0)
+    //    {
+    //        Destroy(gameObject);
+    //    }
+    //}
+    private void Start()
+    {
+        currentHP = startingHP;
+
+        timer = hpDecrementInterval;
+
+        _image_health = healthFill.GetComponent<UnityEngine.UI.Image>();
+    }
+    private void Update()
+    {
+        timer -= Time.deltaTime;
+
+        if (timer <= 0f)
+        {
+            DecrementHP(1);
+
+            timer = hpDecrementInterval;
         }
     }
 
