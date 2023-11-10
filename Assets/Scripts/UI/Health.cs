@@ -1,10 +1,4 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.UIElements;
-using static UnityEngine.UIElements.UxmlAttributeDescription;
 
 public class Health : MonoBehaviour
 {
@@ -14,23 +8,24 @@ public class Health : MonoBehaviour
 
     public int currentHP;
 
-    public int MaxHealth ;
+    //public int MaxHealth ;
 
     private float hpDecrementInterval = 1.0f;
 
     private float timer;
+
+    public UnityEngine.UI.Image _image_health;
     private void DecrementHP(int amount)
     {
         currentHP -= amount;
 
         //Debug.Log("HP: " + currentHP);
 
-        healthFill.GetComponent<UnityEngine.UI.Image>().fillAmount = currentHP/100f;
+        _image_health.fillAmount = currentHP / 100f;
 
         if (currentHP <= 0)
         {
-            // Здесь можно добавить дополнительные действия при достижении HP <= 0
-            Debug.Log("Game Over");
+           Debug.Log("Game Over");
         }
     }
 
@@ -50,6 +45,8 @@ public class Health : MonoBehaviour
         currentHP = startingHP;
 
         timer = hpDecrementInterval;
+
+        _image_health = healthFill.GetComponent<UnityEngine.UI.Image>();
     }
     private void Update()
     {
@@ -57,9 +54,9 @@ public class Health : MonoBehaviour
 
         if (timer <= 0f)
         {
-            DecrementHP(1); // Отнимаем 1 HP
+            DecrementHP(1);
 
-            timer = hpDecrementInterval; // Сбрасываем таймер
+            timer = hpDecrementInterval;
         }
     }
 
