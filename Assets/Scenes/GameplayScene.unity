@@ -1410,6 +1410,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 65199424000539438, guid: a89eef680e28b83449e3a6ba46792fbe,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.6850535
+      objectReference: {fileID: 0}
+    - target: {fileID: 65199424000539438, guid: a89eef680e28b83449e3a6ba46792fbe,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.31223586
+      objectReference: {fileID: 0}
+    - target: {fileID: 65199424000539438, guid: a89eef680e28b83449e3a6ba46792fbe,
+        type: 3}
+      propertyPath: m_Center.y
+      value: -0.0000001750049
+      objectReference: {fileID: 0}
+    - target: {fileID: 65199424000539438, guid: a89eef680e28b83449e3a6ba46792fbe,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.00000021458865
+      objectReference: {fileID: 0}
+    - target: {fileID: 65604477005713112, guid: a89eef680e28b83449e3a6ba46792fbe,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.4970211
+      objectReference: {fileID: 0}
+    - target: {fileID: 65604477005713112, guid: a89eef680e28b83449e3a6ba46792fbe,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.2182193
+      objectReference: {fileID: 0}
+    - target: {fileID: 65604477005713112, guid: a89eef680e28b83449e3a6ba46792fbe,
+        type: 3}
+      propertyPath: m_Center.y
+      value: -0.00000026190148
+      objectReference: {fileID: 0}
+    - target: {fileID: 65604477005713112, guid: a89eef680e28b83449e3a6ba46792fbe,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.00000008820647
+      objectReference: {fileID: 0}
     - target: {fileID: 255025523327338269, guid: a89eef680e28b83449e3a6ba46792fbe,
         type: 3}
       propertyPath: _target
@@ -1417,8 +1457,13 @@ PrefabInstance:
       objectReference: {fileID: 200005384}
     - target: {fileID: 1665510706423666433, guid: a89eef680e28b83449e3a6ba46792fbe,
         type: 3}
-      propertyPath: m_Enabled
-      value: 1
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4700321810189914630, guid: a89eef680e28b83449e3a6ba46792fbe,
+        type: 3}
+      propertyPath: m_Mass
+      value: 2.7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
