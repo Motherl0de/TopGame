@@ -1415,16 +1415,6 @@ PrefabInstance:
       propertyPath: _target
       value: 
       objectReference: {fileID: 200005384}
-    - target: {fileID: 4700321810189914630, guid: a89eef680e28b83449e3a6ba46792fbe,
-        type: 3}
-      propertyPath: m_Drag
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4700321810189914630, guid: a89eef680e28b83449e3a6ba46792fbe,
-        type: 3}
-      propertyPath: m_Mass
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
