@@ -190,6 +190,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1606747317954496584}
+  - component: {fileID: 7820283512221405158}
   m_Layer: 0
   m_Name: PlayerWiithMovement
   m_TagString: Untagged
@@ -215,6 +216,22 @@ Transform:
   - {fileID: 753982186534032398}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7820283512221405158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7008010495951583230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 296c3f52788a2fe48b92f07c212143fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthFill: {fileID: 0}
+  startingHP: 100
+  currentHP: 0
+  _image_health: {fileID: 0}
 --- !u!1 &9156507351196558315
 GameObject:
   m_ObjectHideFlags: 0
