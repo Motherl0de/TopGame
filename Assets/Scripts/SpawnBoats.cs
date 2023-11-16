@@ -15,8 +15,8 @@ public class SpawnBoats : MonoBehaviour
     {
         Vector3 toTarget = (_target.position - transform.position).normalized;
         Vector3 force = Rb.mass * (toTarget * 3f - Rb.velocity) / 1f;
-        transform.LookAt(toTarget);
         Rb.AddForce(force);
+        transform.LookAt(_target);
     }
 
     private IEnumerator OnCollisionStay(Collision other)
