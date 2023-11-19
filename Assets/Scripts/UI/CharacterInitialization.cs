@@ -14,22 +14,17 @@ public class CharacterInitialization : MonoBehaviour
         {
             int playerChenge = PlayerPrefs.GetInt("PlayerChenge");
 
-            if (playerChenge == 2)
+            if (playerChenge == 1)
             {
                 Zombie.SetActive(false);
 
                 Monstr.SetActive(true);
-
-                Debug.Log(playerChenge);
             }
             else
             {
                 Zombie.SetActive(true);
 
                 Monstr.SetActive(false);
-
-                Debug.Log(playerChenge);
-
             }
 
         }

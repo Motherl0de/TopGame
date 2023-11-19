@@ -9,5 +9,11 @@ namespace T_Scripts.UI
         {
             SceneManager.LoadScene("GameplayScene");
         }
+        public void ExitGame()
+        {
+            PlayerPrefs.DeleteKey("PlayerChenge");
+
+            Application.Quit();
+        }
     }
 }
