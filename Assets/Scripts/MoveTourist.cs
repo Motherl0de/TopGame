@@ -5,16 +5,21 @@ using UnityEngine;
 public class MoveTourist : MonoBehaviour
 {
     [SerializeField]private List<Vector3> waypoints;
-    private Rigidbody _rb;
-    private Rigidbody Rb => _rb ??= GetComponent<Rigidbody>();
     private int _currentWaypointIndex = 0;
     private bool _isMovingToNextWaypoint = true;
+    private Vector3 _direction;
+    public float smoothTime = 0.3f;
+
+    private Vector3 velocity = Vector3.zero;
     
     void Update()
     {
         if (_isMovingToNextWaypoint) {
             MoveToNextWaypoint();
         }
+        _direction = waypoints[_currentWaypointIndex] - transform.position;
+        Quaternion lookAtRotation = Quaternion.LookRotation(_direction);
+        transform.rotation = Quaternion.Slerp(transform.rotation, lookAtRotation, smoothTime);
     }
 
     private void MoveToNextWaypoint()
