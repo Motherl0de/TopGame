@@ -5676,7 +5676,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26f8d58f87d2c9c40a16aaab99cd77b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _tourist: {fileID: 100112, guid: 753b38eb36b5add498f220edebff3f9b, type: 3}
+  _tourist: {fileID: 857618110189912058, guid: efc7e5e0b1fa9dc4e8903d9d44e874a2, type: 3}
 --- !u!1001 &121679062237426100
 PrefabInstance:
   m_ObjectHideFlags: 0
