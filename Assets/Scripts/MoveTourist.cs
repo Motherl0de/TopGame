@@ -8,10 +8,8 @@ public class MoveTourist : MonoBehaviour
     private int _currentWaypointIndex = 0;
     private bool _isMovingToNextWaypoint = true;
     private Vector3 _direction;
-    public float smoothTime = 0.3f;
+    private float _smoothTime = 0.3f;
 
-    private Vector3 velocity = Vector3.zero;
-    
     void Update()
     {
         if (_isMovingToNextWaypoint) {
@@ -19,7 +17,7 @@ public class MoveTourist : MonoBehaviour
         }
         _direction = waypoints[_currentWaypointIndex] - transform.position;
         Quaternion lookAtRotation = Quaternion.LookRotation(_direction);
-        transform.rotation = Quaternion.Slerp(transform.rotation, lookAtRotation, smoothTime);
+        transform.rotation = Quaternion.Slerp(transform.rotation, lookAtRotation, _smoothTime);
     }
 
     private void MoveToNextWaypoint()
