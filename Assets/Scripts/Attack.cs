@@ -26,5 +26,6 @@ public sealed class Attack : MonoBehaviour
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.GetComponent<MoveTourist>()) Health.currentHP += 15;
+        if (other.gameObject.CompareTag("Shrub")) Health.currentHP -= 20;
     }
 }
