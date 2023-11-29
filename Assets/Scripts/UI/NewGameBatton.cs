@@ -6,10 +6,29 @@ public class NewGameBatton : MonoBehaviour
 {
     public GameObject ChengePlayerPanel;
 
-    public void AnactivatePanet()
+    public GameObject ButtonNewGame;
+
+    public GameObject ButtonExitGame;
+
+    public void ActivatePanet()
     {
         ChengePlayerPanel.SetActive(true);
+
+        ButtonNewGame.SetActive(false);
+
+        ButtonExitGame.SetActive(false);
     }
+
+    public void DeactivatePanet()
+    {
+        ChengePlayerPanel.SetActive(false);
+
+        ButtonNewGame.SetActive(true);
+
+        ButtonExitGame.SetActive(true);
+    }
+
+
 
 
     // Start is called before the first frame update
