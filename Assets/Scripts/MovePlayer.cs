@@ -6,7 +6,7 @@ public class MovePlayer : MonoBehaviour
 {
     [SerializeField] private Rigidbody _rigidbody;
 
-    [SerializeField] private float _speed = 10f;
+    private readonly float _speed = 10f;
     [SerializeField] private float _rotationSpeed = 2.0f;
     private Animator _animator;
     private static readonly int Run = Animator.StringToHash("Run");
@@ -14,13 +14,10 @@ public class MovePlayer : MonoBehaviour
 
     private void Move()
     {
-        
         float z = Input.GetAxis("Vertical");
         
-        if (z == 0)
-        {
-            return;
-        }
+        if (z == 0) return;
+
         Anim.SetFloat(Run, z);
 
         Vector3 targetVelocity = transform.TransformDirection(new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"))) * _speed;
