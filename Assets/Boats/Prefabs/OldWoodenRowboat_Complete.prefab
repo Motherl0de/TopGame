@@ -427,32 +427,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5606065687576921992, guid: 152991f98055cdc48bdb2ba1d070a8a6,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2713548463231138607}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 152991f98055cdc48bdb2ba1d070a8a6, type: 3}
---- !u!1 &1201917931759897822 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5606065687576921992, guid: 152991f98055cdc48bdb2ba1d070a8a6,
-    type: 3}
-  m_PrefabInstance: {fileID: 6729133172551830358}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2713548463231138607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1201917931759897822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd26aee03fe2f2e48b2f70b323fdcf32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _water: {fileID: 2100000, guid: 529641ce5280d964d92ae6d66408ca28, type: 2}
-  _boat: {fileID: 2100000, guid: 98afed958a355d6478e3e28fef01e06f, type: 2}
 --- !u!4 &2010225363149968996 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5082153467514395954, guid: 152991f98055cdc48bdb2ba1d070a8a6,
