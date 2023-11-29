@@ -296,6 +296,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 28604701361596428, guid: a1bdfb9f6bdd7e54481232798a9818e6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 128.69995
+      objectReference: {fileID: 0}
+    - target: {fileID: 28604701361596428, guid: a1bdfb9f6bdd7e54481232798a9818e6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -25.300049
+      objectReference: {fileID: 0}
     - target: {fileID: 1376228830164681909, guid: a1bdfb9f6bdd7e54481232798a9818e6,
         type: 3}
       propertyPath: m_Pivot.x
@@ -405,6 +415,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866978152566543577, guid: a1bdfb9f6bdd7e54481232798a9818e6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 128.69995
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866978152566543577, guid: a1bdfb9f6bdd7e54481232798a9818e6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -25.300049
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
