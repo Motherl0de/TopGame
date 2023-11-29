@@ -422,6 +422,7 @@ GameObject:
   - component: {fileID: 7872490468301311633}
   - component: {fileID: 2444050490792673697}
   - component: {fileID: 5302720244135428300}
+  - component: {fileID: 5530910535866146946}
   m_Layer: 0
   m_Name: sk_monster_4
   m_TagString: Untagged
@@ -466,7 +467,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: a2ad8092d2cdc2947a045eab7d8d971c, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_WarningMessage: 
@@ -520,8 +521,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.7462265, y: 1.6818562, z: 0.54756594}
-  m_Center: {x: 0.007793188, y: 0.9713399, z: 0.044454496}
+  m_Size: {x: 0.62618434, y: 1.6818562, z: 0.3454361}
+  m_Center: {x: -0.037332617, y: 0.9713399, z: 0.026624363}
 --- !u!114 &5302720244135428300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -535,8 +536,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 7872490468301311633}
-  _speed: 10
   _rotationSpeed: 2
+--- !u!114 &5530910535866146946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320769219843760273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 236b9a58370343642aa264392e6ec9a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1650160006081523486
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,6 +1,7 @@
+using System;
 using UnityEngine;
 
-public class DestroyWoodenBox : MonoBehaviour
+public sealed class DestroyWoodenBox : MonoBehaviour
 {
     [SerializeField] private GameObject[] _box;
     [SerializeField] private GameObject _partical;
@@ -21,14 +22,14 @@ public class DestroyWoodenBox : MonoBehaviour
         BreakOnClick();
     }
 
-    private void OnCollisionStay(Collision other)
+    private void OnCollisionEnter(Collision other)
     {
-        BreakOnClick();
+        if (other.gameObject.GetComponent<MovePlayer>()) BreakOnClick();
     }
 
     private void BreakOnClick()
     {
-        if (Input.GetMouseButtonDown(0) && _pendingIndex <= _box.Length)
+        if (Input.GetMouseButtonDown(1) && _pendingIndex <= _box.Length)
         {
             _current.SetActive(false);
             if (_next is not null)

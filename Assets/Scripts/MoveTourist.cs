@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class MoveTourist : MonoBehaviour
 {
-    [SerializeField]private List<Vector3> waypoints;
+    [FormerlySerializedAs("waypoints")] [SerializeField]private List<Vector3> _waypoints;
     private int _currentWaypointIndex = 0;
     private bool _isMovingToNextWaypoint = true;
     private Vector3 _direction;
@@ -15,20 +16,20 @@ public class MoveTourist : MonoBehaviour
         if (_isMovingToNextWaypoint) {
             MoveToNextWaypoint();
         }
-        _direction = waypoints[_currentWaypointIndex] - transform.position;
+        _direction = _waypoints[_currentWaypointIndex] - transform.position;
         Quaternion lookAtRotation = Quaternion.LookRotation(_direction);
         transform.rotation = Quaternion.Slerp(transform.rotation, lookAtRotation, _smoothTime);
     }
 
     private void MoveToNextWaypoint()
     {
-        Vector3 currentWaypoint = waypoints[_currentWaypointIndex];
+        Vector3 currentWaypoint = _waypoints[_currentWaypointIndex];
         float step = 2f * Time.deltaTime;
 
         transform.position = Vector3.MoveTowards(transform.position, currentWaypoint, step);
 
         if (Vector3.Distance(transform.position, currentWaypoint) < 0.1f) {
-            if (_currentWaypointIndex + 1 < waypoints.Count) {
+            if (_currentWaypointIndex + 1 < _waypoints.Count) {
                 _currentWaypointIndex++;
             }
             else {

@@ -142,12 +142,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b77d160a6f215d4484ad9aafc309ea5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoints:
+  _waypoints:
   - {x: 6.6960588, y: 8.93, z: 5.52}
   - {x: 0.3, y: 8.6, z: 6.33}
   - {x: 10.88, y: 8.24, z: 8.1}
   - {x: 0.02, y: 9.187, z: -2.96}
-  - {x: 0.29, y: 7.97, z: -10.28}
+  - {x: 0.29, y: 8, z: 7}
   - {x: 8.75, y: 5.86, z: -17.04}
   - {x: -2.82, y: 5, z: -20.99}
   - {x: -12.22, y: 6.63, z: -2.55}
