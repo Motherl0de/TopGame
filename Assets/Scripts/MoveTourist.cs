@@ -10,7 +10,7 @@ public class MoveTourist : MonoBehaviour
     private Vector3 _direction;
     private float _smoothTime = 0.3f;
 
-    void Update()
+    private void Update()
     {
         if (_isMovingToNextWaypoint) {
             MoveToNextWaypoint();
@@ -40,7 +40,7 @@ public class MoveTourist : MonoBehaviour
         }
     }
 
-    IEnumerator ChangeDirectionAndMoveAfterDelay()
+      private IEnumerator ChangeDirectionAndMoveAfterDelay()
     {
         yield return new WaitForSeconds(UnityEngine.Random.Range(1f, 5f));
 
