@@ -1,5 +1,54 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1612752903423632657
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3643262580032160137}
+  - component: {fileID: 1837864054659508882}
+  m_Layer: 0
+  m_Name: Effect
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3643262580032160137
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612752903423632657}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -642.93854, y: -772.5066, z: -8.200496}
+  m_LocalScale: {x: 2.3392656, y: 2.3392656, z: 2.3392656}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1376228830164681909}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1837864054659508882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612752903423632657}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 077b1bf51fe3e27469be759dfceecba5, type: 2}
 --- !u!1 &2234650732623079208
 GameObject:
   m_ObjectHideFlags: 0
@@ -111,7 +160,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 128.70001, y: -25.299988}
+  m_AnchoredPosition: {x: 128.69995, y: -25.300049}
   m_SizeDelta: {x: 221.84302, y: 16.550293}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3243641491934236760
@@ -319,7 +368,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 128.70001, y: -25.300003}
+  m_AnchoredPosition: {x: 128.69995, y: -25.300049}
   m_SizeDelta: {x: 221.84302, y: 16.550293}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5377270781898091445
@@ -373,6 +422,7 @@ GameObject:
   - component: {fileID: 4545466215208365451}
   - component: {fileID: 8597437363087795513}
   - component: {fileID: 2297161008815842630}
+  - component: {fileID: 1699340876740153857}
   m_Layer: 5
   m_Name: PlayerHealthCanvas
   m_TagString: Untagged
@@ -396,6 +446,7 @@ RectTransform:
   - {fileID: 5866978152566543577}
   - {fileID: 1967138604248542167}
   - {fileID: 8700507396363648358}
+  - {fileID: 3643262580032160137}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -482,6 +533,20 @@ MonoBehaviour:
   PausGameMenu: {fileID: 2234650732623079208}
   Player: {fileID: 0}
   PausButton: {fileID: 5746715391308724157}
+--- !u!114 &1699340876740153857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5223529853237159830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f55d45e77dfee7e44909328f39e88ece, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Zombie: {fileID: 0}
+  Monstr: {fileID: 0}
 --- !u!1 &5746715391308724157
 GameObject:
   m_ObjectHideFlags: 0
