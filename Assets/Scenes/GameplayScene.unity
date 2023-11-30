@@ -429,7 +429,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5223529853237159830, guid: a1bdfb9f6bdd7e54481232798a9818e6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 302244435}
   m_SourcePrefab: {fileID: 100100000, guid: a1bdfb9f6bdd7e54481232798a9818e6, type: 3}
 --- !u!1001 &141767882
 PrefabInstance:
@@ -499,6 +503,32 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bbcb1e3e44917ca4ca7c34a829e7e147, type: 3}
+--- !u!1 &199202569 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6258707736419994134, guid: fca5711655770404ba39f0d6168102a2,
+    type: 3}
+  m_PrefabInstance: {fileID: 4370008093499611050}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &302244429 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5223529853237159830, guid: a1bdfb9f6bdd7e54481232798a9818e6,
+    type: 3}
+  m_PrefabInstance: {fileID: 48569333}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &302244435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 302244429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f55d45e77dfee7e44909328f39e88ece, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Zombie: {fileID: 199202569}
+  Monstr: {fileID: 1634814390}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -2125,6 +2155,12 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4752247957291995040, guid: a1bdfb9f6bdd7e54481232798a9818e6,
     type: 3}
   m_PrefabInstance: {fileID: 48569333}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1634814390 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 89366524068171444, guid: fca5711655770404ba39f0d6168102a2,
+    type: 3}
+  m_PrefabInstance: {fileID: 4370008093499611050}
   m_PrefabAsset: {fileID: 0}
 --- !u!43 &1708638483
 Mesh:
