@@ -12,7 +12,8 @@ public sealed class Death : MonoBehaviour
         {
             Anim.SetBool("Death",true);
             MoveTourist.enabled = false;
-            Destroy(gameObject,1.5f);
+            Destroy(gameObject,1f);
+            FindObjectOfType<Rigidbody>().drag = 10f;
         }
     }
 }

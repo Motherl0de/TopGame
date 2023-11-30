@@ -16,6 +16,7 @@ public class MoveTourist : MonoBehaviour
         if (_isMovingToNextWaypoint) {
             MoveToNextWaypoint();
         }
+        
         _direction = _waypoints[_currentWaypointIndex] - transform.position;
         Quaternion lookAtRotation = Quaternion.LookRotation(_direction);
         transform.rotation = Quaternion.Slerp(transform.rotation, lookAtRotation, _smoothTime);
