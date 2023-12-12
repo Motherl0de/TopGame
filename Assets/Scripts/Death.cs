@@ -6,6 +6,7 @@ public sealed class Death : MonoBehaviour
     private MoveTourist _moveTourist;
     private MoveTourist MoveTourist => _moveTourist ??= GetComponent<MoveTourist>();
     private Animator Anim => _animator ??= GetComponent<Animator>();
+    
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.GetComponent<MovePlayer>())
@@ -14,6 +15,7 @@ public sealed class Death : MonoBehaviour
             MoveTourist.enabled = false;
             Destroy(gameObject,1f);
             FindObjectOfType<Rigidbody>().drag = 10f;
+            
         }
     }
 }
