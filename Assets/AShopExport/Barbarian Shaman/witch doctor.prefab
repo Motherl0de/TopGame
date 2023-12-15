@@ -9,8 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 408720}
-  - component: {fileID: 11108822}
   - component: {fileID: 13608822}
+  - component: {fileID: 32348615048193804}
+  - component: {fileID: 3497346558786622269}
+  - component: {fileID: 2269848957312578366}
   m_Layer: 0
   m_Name: witch doctor
   m_TagString: Untagged
@@ -37,26 +39,6 @@ Transform:
   - {fileID: 408728}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!111 &11108822
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 108720}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 5450648928fd5bc4c8be1d4938fc3844, type: 3}
-  m_Animations:
-  - {fileID: 7400000, guid: 5450648928fd5bc4c8be1d4938fc3844, type: 3}
-  - {fileID: 7400002, guid: 5450648928fd5bc4c8be1d4938fc3844, type: 3}
-  - {fileID: 7400004, guid: 5450648928fd5bc4c8be1d4938fc3844, type: 3}
-  - {fileID: 7400006, guid: 5450648928fd5bc4c8be1d4938fc3844, type: 3}
-  - {fileID: 7400008, guid: 5450648928fd5bc4c8be1d4938fc3844, type: 3}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 1
 --- !u!136 &13608822
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -72,14 +54,74 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.5
-  m_Height: 2
+  m_Radius: 1.15
+  m_Height: 1.41
   m_Direction: 1
-  m_Center: {x: 0, y: 1.1, z: 0.3}
+  m_Center: {x: 0, y: 1.14, z: 0.22}
+--- !u!54 &32348615048193804
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108720}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!114 &3497346558786622269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 526969a50d73a9944be3d84b65a089a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!95 &2269848957312578366
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108720}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 5450648928fd5bc4c8be1d4938fc3844, type: 3}
+  m_Controller: {fileID: 9100000, guid: ab9cbe119f27509499110c6e2380a62c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &108722
 GameObject:
   m_ObjectHideFlags: 0
