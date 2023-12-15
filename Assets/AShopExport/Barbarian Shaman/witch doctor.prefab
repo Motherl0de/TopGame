@@ -58,10 +58,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.15
-  m_Height: 1.41
+  m_Radius: 0.64241457
+  m_Height: 2.4377766
   m_Direction: 1
-  m_Center: {x: 0, y: 1.14, z: 0.22}
+  m_Center: {x: 0.77, y: 1.22, z: 0.15}
 --- !u!54 &32348615048193804
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -71,7 +71,7 @@ Rigidbody:
   m_GameObject: {fileID: 108720}
   serializedVersion: 4
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.3
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
