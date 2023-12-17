@@ -13,10 +13,10 @@ public class MenuButtonSound : MonoBehaviour, IPointerEnterHandler
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        if(audioSorce != null && audioButton != null)
-        {
-            audioSorce.PlayOneShot(audioButton);
-        }
+        //if(audioSorce != null && audioButton != null)
+        //{
+        //    audioSorce.PlayOneShot(audioButton);
+        //}
 
     }
     public void Click2222()
