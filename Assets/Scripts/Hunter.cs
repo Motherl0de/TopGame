@@ -9,8 +9,10 @@ public sealed class Hunter : MonoBehaviour
     private static readonly int Attack1 = Animator.StringToHash("attack");
     private Health health;
     private Transform _player;
+    private int _curentHP = 50;
     private Animator Anim => _animator ??= GetComponent<Animator>();
     private Rigidbody Rb => _rigidbody ??= GetComponent<Rigidbody>();
+    
 
     private void Start()
     {
@@ -20,7 +22,9 @@ public sealed class Hunter : MonoBehaviour
 
     private void Update()
     {
-        Move();
+        if(_player)
+            Move();
+        if(_curentHP <= 0) Destroy(gameObject);
     }
 
     private void OnCollisionEnter(Collision other)
@@ -37,5 +41,11 @@ public sealed class Hunter : MonoBehaviour
         var direction = (_player.position - transform.position).normalized;
         Rb.AddForce(direction * 9f);
         transform.LookAt(_player);
+    }
+
+    public int Health(int hp)
+    {
+        _curentHP -= hp;
+        return _curentHP;
     }
 }
