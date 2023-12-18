@@ -26,6 +26,7 @@ public sealed class Hunter : MonoBehaviour
     {
         if(_player)
             Move();
+        else{_attack1.Stop(); _attack2.Stop();}
         if(_curentHP <= 0) Destroy(gameObject);
     }
 
@@ -47,7 +48,7 @@ public sealed class Hunter : MonoBehaviour
     private void Move()
     {
         var direction = (_player.position - transform.position).normalized;
-        Rb.AddForce(direction * 9f);
+        Rb.AddForce(direction * 9.7f);
         transform.LookAt(_player);
     }
 
