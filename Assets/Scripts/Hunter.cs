@@ -3,6 +3,8 @@ using UnityEngine;
 
 public sealed class Hunter : MonoBehaviour
 {
+    [SerializeField] private ParticleSystem _attack1;
+    [SerializeField] private ParticleSystem _attack2;
     private Rigidbody _rigidbody;
     private Animator _animator;
     private Health _health;
@@ -33,6 +35,12 @@ public sealed class Hunter : MonoBehaviour
         {
             Anim.SetTrigger(Attack1);
             health.currentHP -= 15;
+            _attack1.Play();
+            _attack2.Play();
+        }
+        else {
+            _attack1.Stop();
+            _attack2.Stop();
         }
     }
 
