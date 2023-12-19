@@ -6,6 +6,8 @@ public sealed class DestroyWoodenBox : MonoBehaviour
     [SerializeField] private GameObject[] _box;
     [SerializeField] private GameObject _partical;
     [SerializeField] private Transform _spawn;
+    [SerializeField] private AudioSource _audioPortal;
+    [SerializeField] private ParticleSystem _portal;
     private GameObject _current;
     private GameObject _next;
     private int _pendingIndex;
@@ -15,17 +17,22 @@ public sealed class DestroyWoodenBox : MonoBehaviour
         _current = _box[0];
         _next = _box[1];
         _pendingIndex = 2;
+        _portal.Stop();
     }
 
-    private void Update()
-    {
-        BreakOnClick();
-    }
+    // private void Update()
+    // {
+    //     BreakOnClick();
+    // }
 
     private void OnCollisionEnter(Collision other)
     {
         if (other.gameObject.GetComponent<MovePlayer>()) BreakOnClick();
     }
+    // private void OnTriggerEnter(Collider other)
+    // {
+    //     if (other.gameObject.GetComponent<MovePlayer>()) BreakOnClick();
+    // }
 
     private void BreakOnClick()
     {
@@ -41,6 +48,11 @@ public sealed class DestroyWoodenBox : MonoBehaviour
             _current = _next;
             _next = _pendingIndex < _box.Length ? _box[_pendingIndex] : null;
             _pendingIndex++;
+            if (_next == _box[2])
+            {
+                _audioPortal.Play();
+                _portal.Play();
+            }
         }
     }
 }

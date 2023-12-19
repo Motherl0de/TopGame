@@ -8,9 +8,8 @@ public sealed class Hunter : MonoBehaviour
     private AudioSource _hit;
     private Rigidbody _rigidbody;
     private Animator _animator;
-    private Health _health;
     private static readonly int Attack1 = Animator.StringToHash("attack");
-    private Health health;
+    private Health _health;
     
     private Transform _player;
     private int _curentHP = 50;
@@ -21,7 +20,7 @@ public sealed class Hunter : MonoBehaviour
 
     private void Start()
     {
-        health = FindObjectOfType<Health>().GetComponent<Health>();
+        _health = FindObjectOfType<Health>().GetComponent<Health>();
         _player = FindObjectOfType<MovePlayer>().transform;
     }
 
@@ -38,7 +37,7 @@ public sealed class Hunter : MonoBehaviour
         if (other.gameObject.GetComponent<MovePlayer>())
         {
             Anim.SetTrigger(Attack1);
-            health.currentHP -= 15;
+            _health.currentHP -= 15;
             Hit.Play();
             _attack1.Play();
             _attack2.Play();
@@ -52,7 +51,7 @@ public sealed class Hunter : MonoBehaviour
     private void Move()
     {
         var direction = (_player.position - transform.position).normalized;
-        Rb.AddForce(direction * 9.7f);
+        Rb.AddForce(direction * 11f);
         transform.LookAt(_player);
     }
 

@@ -2749,12 +2749,12 @@ PrefabInstance:
     - target: {fileID: 299784256446217025, guid: bbcb1e3e44917ca4ca7c34a829e7e147,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.68
+      value: 7.668
       objectReference: {fileID: 0}
     - target: {fileID: 299784256446217025, guid: bbcb1e3e44917ca4ca7c34a829e7e147,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.25
+      value: -10.247
       objectReference: {fileID: 0}
     - target: {fileID: 299784256446217025, guid: bbcb1e3e44917ca4ca7c34a829e7e147,
         type: 3}
@@ -2796,8 +2796,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: WoodenBox
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4856913370970097447, guid: bbcb1e3e44917ca4ca7c34a829e7e147, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
