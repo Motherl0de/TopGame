@@ -1,57 +1,63 @@
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Health : MonoBehaviour
 {
-    public GameObject healthFill;
-    public int startingHP = 100;
+    private int startingHP = 100;
     public int currentHP;
-    private float hpDecrementInterval = 1.0f;
-
-    private float timer;
-    public UnityEngine.UI.Image _image_health;
+    private float timerDecrimentalInterval = 1.0f;
+    public Slider healthBarSlyder;
+    public Image FraimDamag;
+    public Animator FraimAnimator;
     
     private void DecrementHP(int amount)
     {
-        currentHP -= amount;
-        _image_health.fillAmount = currentHP / 100f;
+        if(currentHP > 0)
+        {
+            currentHP -= amount;
 
+            healthBarSlyder.value = currentHP / 100f;
+        }
+         
         if (currentHP <= 0)
         {
-            var player = FindObjectOfType<MovePlayer>().gameObject;
-            Destroy(player);
-           Debug.Log("Game Over");
+            //var player = FindObjectOfType<MovePlayer>().gameObject;
+            //Destroy(player);
+            Debug.Log($"Game Over = {currentHP}");
         }
     }
+    public void TakeDamag(int Damag)
+    {
+        currentHP -= Damag;
 
-    // public void TakeDamag(int Damag)
-    // {
-    //     currentHP += Damag;
-    //
-    //     healthFill.GetComponent<UnityEngine.UI.Image>().fillAmount = currentHP / 100f;
-    //
-    //     if (currentHP <= 0)
-    //     {
-    //         Destroy(gameObject);
-    //     }
-    // }
+        if(currentHP <= 0) 
+        {
+            currentHP = 0;
+
+            Debug.Log("Game Over");
+        }
+        healthBarSlyder.value = currentHP / 100f;
+
+        FraimAnimator.SetBool("TakeDamag", true);
+    }
+    public void BollFalse()
+    {
+        FraimAnimator.SetBool("TakeDamag", false);
+    }
     private void Start()
     {
         currentHP = startingHP;
-
-        timer = hpDecrementInterval;
-
-        _image_health = healthFill.GetComponent<UnityEngine.UI.Image>();
     }
     private void Update()
     {
-        timer -= Time.deltaTime;
+        timerDecrimentalInterval -= Time.deltaTime;
 
-        if (timer <= 0f)
+        if (timerDecrimentalInterval <= 0f)
         {
             DecrementHP(1);
 
-            timer = hpDecrementInterval;
+            timerDecrimentalInterval = 1.0f;
         }
     }
-
 }
