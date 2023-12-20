@@ -35,7 +35,7 @@ public sealed class DestroyWoodenBox : MonoBehaviour
                 Instantiate(_partical, _spawn);
                 if (_next == _box[2].activeInHierarchy) {
                     _audioPortal.Play();
-                    Instantiate(_portal,new Vector3(-9,10,-10),Quaternion.identity);
+                    Instantiate(_portal,new Vector3(-9f,9.1f,-10f),Quaternion.identity);
                 }
             }
 
