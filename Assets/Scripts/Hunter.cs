@@ -37,7 +37,7 @@ public sealed class Hunter : MonoBehaviour
         if (other.gameObject.GetComponent<MovePlayer>())
         {
             Anim.SetTrigger(Attack1);
-            _health.currentHP -= 15;
+            _health.TakeDamag(15);
             Hit.Play();
             _attack1.Play();
             _attack2.Play();
