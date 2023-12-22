@@ -1,22 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class VolumeController : MonoBehaviour
 {
     public AudioSource audioSorce;
 
-    public GameObject VolumeSettings;
+    public Scrollbar ScrollBarValue;
 
-    private Settings setting;
-    public void Awake()
-    {
-        setting = VolumeSettings.GetComponent<Settings>();
-    }
+    public Scrollbar VolumVolum;
 
     public void Update()
     {
-        audioSorce.volume = setting.volumeVolume;
+        audioSorce.volume = ScrollBarValue.value * VolumVolum.value;
     }
 
 }
