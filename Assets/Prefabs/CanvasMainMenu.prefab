@@ -154,6 +154,86 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &1158496185361112627
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3410655789527728069}
+  - component: {fileID: 5728978065852865911}
+  - component: {fileID: 743681531464110897}
+  m_Layer: 5
+  m_Name: Text (Legacy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3410655789527728069
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158496185361112627}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.99990183, y: 0.99990183, z: 0.99990183}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6417709444569899589}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 700, y: 40}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &5728978065852865911
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158496185361112627}
+  m_CullTransparentMesh: 1
+--- !u!114 &743681531464110897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158496185361112627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 27
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: ' 10      9       8      7       6      5       4      3      2       
+    1     0'
 --- !u!1 &1906658912945491539
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,8 +357,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3927323703572487623}
         m_TargetAssemblyTypeName: DataManager, Assembly-CSharp
-        m_MethodName: ChengeZonbi
-        m_Mode: 1
+        m_MethodName: ChengePlayer2
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -366,6 +446,86 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Developers:'
+--- !u!1 &2839478426255112733
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3182791800517437891}
+  - component: {fileID: 2230681352909859790}
+  - component: {fileID: 6881029455659727304}
+  m_Layer: 5
+  m_Name: Text (Legacy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3182791800517437891
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2839478426255112733}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7379569170662254585}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 700, y: 40}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2230681352909859790
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2839478426255112733}
+  m_CullTransparentMesh: 1
+--- !u!114 &6881029455659727304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2839478426255112733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 27
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: ' 10      9       8      7       6      5       4      3      2       
+    1     0'
 --- !u!1 &3639454271969054726
 GameObject:
   m_ObjectHideFlags: 0
@@ -877,16 +1037,96 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3927323703572487623}
         m_TargetAssemblyTypeName: DataManager, Assembly-CSharp
-        m_MethodName: ChengeMonstr
-        m_Mode: 1
+        m_MethodName: ChengePlayer2
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &4818730925114671727
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6376287095663754055}
+  - component: {fileID: 2630599459970834304}
+  - component: {fileID: 4995171310195476985}
+  m_Layer: 5
+  m_Name: Text (Legacy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &6376287095663754055
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4818730925114671727}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.99990183, y: 0.99990183, z: 0.99990183}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6010391618161530804}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 700, y: 40}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2630599459970834304
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4818730925114671727}
+  m_CullTransparentMesh: 1
+--- !u!114 &4995171310195476985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4818730925114671727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 27
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: ' 10      9       8      7       6      5       4      3      2       
+    1     0'
 --- !u!1 &5402597237067121426
 GameObject:
   m_ObjectHideFlags: 0
@@ -1147,6 +1387,81 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PanelSeting: {fileID: 6150383341687192384}
+--- !u!1 &6297548055552423005
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9058980890635906020}
+  - component: {fileID: 7019443885397186281}
+  - component: {fileID: 3435695956966157791}
+  m_Layer: 5
+  m_Name: GameName
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &9058980890635906020
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6297548055552423005}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5384282880421379136}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -111.025}
+  m_SizeDelta: {x: 701.98, y: 222.05}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &7019443885397186281
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6297548055552423005}
+  m_CullTransparentMesh: 1
+--- !u!114 &3435695956966157791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6297548055552423005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 160858344, guid: db931e407e334c64aaff96930d174e9a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &6604076845098747046
 GameObject:
   m_ObjectHideFlags: 0
@@ -1366,6 +1681,86 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &6986178572611194025
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2851944201023131067}
+  - component: {fileID: 150605286369673370}
+  - component: {fileID: 5003448533178079533}
+  m_Layer: 5
+  m_Name: Text (Legacy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2851944201023131067
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6986178572611194025}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.99990183, y: 0.99990183, z: 0.99990183}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6723920079082391690}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 700, y: 40}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &150605286369673370
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6986178572611194025}
+  m_CullTransparentMesh: 1
+--- !u!114 &5003448533178079533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6986178572611194025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 27
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: ' 10      9       8      7       6      5       4      3      2       
+    1     0'
 --- !u!1 &7012989311685004159
 GameObject:
   m_ObjectHideFlags: 0
@@ -1380,6 +1775,7 @@ GameObject:
   - component: {fileID: 8942077704663195678}
   - component: {fileID: 3927323703572487623}
   - component: {fileID: 8892431107614944214}
+  - component: {fileID: 7461742237293545215}
   m_Layer: 5
   m_Name: CanvasMainMenu
   m_TagString: Untagged
@@ -1400,6 +1796,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2183567877415949422}
+  - {fileID: 9058980890635906020}
   - {fileID: 626849071609267578}
   - {fileID: 622732870644695546}
   - {fileID: 6196943945951312918}
@@ -1486,8 +1883,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14d3eeff0ebc1144bbdca933e5dafcdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ButtonZombie: {fileID: 1906658912945491539}
-  ButtonMonstr: {fileID: 4501696720627334747}
   ButtonPlayGame2: {fileID: 5557089918303077177}
 --- !u!114 &8892431107614944214
 MonoBehaviour:
@@ -1504,6 +1899,22 @@ MonoBehaviour:
   ChengePlayerPanel: {fileID: 1051566635291247886}
   ButtonAGrup1: {fileID: 7423431671308097775}
   ButtonPlay2: {fileID: 7651748022410926728}
+--- !u!114 &7461742237293545215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7012989311685004159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 087d767b33262ab4ca395e50a2f54b46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SetVolumeVolume: {fileID: 1571190862175450695}
+  SetVolumeSound: {fileID: 7289353789863211453}
+  SetVolumeSystem: {fileID: 6657349230364374785}
+  SetVolumeGame: {fileID: 1713100668971996871}
 --- !u!1 &7423431671308097775
 GameObject:
   m_ObjectHideFlags: 0
@@ -2032,32 +2443,32 @@ PrefabInstance:
     - target: {fileID: 904065371585775425, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 904065371585775425, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 904065371585775425, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 700
       objectReference: {fileID: 0}
     - target: {fileID: 904065371585775425, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 904065371585775425, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 904065371585775425, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -20
       objectReference: {fileID: 0}
     - target: {fileID: 2303378207695912080, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
@@ -2069,20 +2480,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Text (Volume)
       objectReference: {fileID: 0}
+    - target: {fileID: 3206827064194006497, guid: 0ba137bec569a0744a2b027985b69a1f,
+        type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3206827064194006497, guid: 0ba137bec569a0744a2b027985b69a1f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1117317267, guid: db931e407e334c64aaff96930d174e9a,
+        type: 3}
     - target: {fileID: 3222971628892106622, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.89444447
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3222971628892106622, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3222971628892106622, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.84444445
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3438627812881469506, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
@@ -2092,92 +2514,92 @@ PrefabInstance:
     - target: {fileID: 3743288545677624061, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3743288545677624061, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3743288545677624061, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 700
       objectReference: {fileID: 0}
     - target: {fileID: 3743288545677624061, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 3743288545677624061, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 3743288545677624061, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -130
       objectReference: {fileID: 0}
     - target: {fileID: 4013468174467459122, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4013468174467459122, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4013468174467459122, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 700
       objectReference: {fileID: 0}
     - target: {fileID: 4013468174467459122, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 4013468174467459122, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4013468174467459122, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -240
       objectReference: {fileID: 0}
     - target: {fileID: 4146600230594656012, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4146600230594656012, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4146600230594656012, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 700
       objectReference: {fileID: 0}
     - target: {fileID: 4146600230594656012, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 4146600230594656012, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 4146600230594656012, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -350
       objectReference: {fileID: 0}
     - target: {fileID: 4487491490495523583, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
@@ -2194,6 +2616,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4777378402555264346, guid: 0ba137bec569a0744a2b027985b69a1f,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 7461742237293545215}
     - target: {fileID: 4777378402555264346, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
@@ -2222,47 +2649,69 @@ PrefabInstance:
     - target: {fileID: 4870625749397460854, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.89444447
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4870625749397460854, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4870625749397460854, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.84444445
+      value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5798411061403208026, guid: 0ba137bec569a0744a2b027985b69a1f,
+        type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5798411061403208026, guid: 0ba137bec569a0744a2b027985b69a1f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1117317267, guid: db931e407e334c64aaff96930d174e9a,
+        type: 3}
+    - target: {fileID: 5839719650310505037, guid: 0ba137bec569a0744a2b027985b69a1f,
+        type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5839719650310505037, guid: 0ba137bec569a0744a2b027985b69a1f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1117317267, guid: db931e407e334c64aaff96930d174e9a,
+        type: 3}
     - target: {fileID: 6256847904701259568, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.89444447
-      objectReference: {fileID: 0}
-    - target: {fileID: 6256847904701259568, guid: 0ba137bec569a0744a2b027985b69a1f,
-        type: 3}
-      propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6256847904701259568, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6256847904701259568, guid: 0ba137bec569a0744a2b027985b69a1f,
+        type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.84444445
+      value: 0.95
       objectReference: {fileID: 0}
     - target: {fileID: 7427221576369225553, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.89444447
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7427221576369225553, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7427221576369225553, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.84444445
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8750384646425349566, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
@@ -2364,15 +2813,52 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8971318474230804017, guid: 0ba137bec569a0744a2b027985b69a1f,
+        type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8971318474230804017, guid: 0ba137bec569a0744a2b027985b69a1f,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1117317267, guid: db931e407e334c64aaff96930d174e9a,
+        type: 3}
     - target: {fileID: 9068584800009232553, guid: 0ba137bec569a0744a2b027985b69a1f,
         type: 3}
       propertyPath: m_Name
       value: PaneleSetting
       objectReference: {fileID: 0}
+    - target: {fileID: 9164649758024521471, guid: 0ba137bec569a0744a2b027985b69a1f,
+        type: 3}
+      propertyPath: m_Value
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164649758024521471, guid: 0ba137bec569a0744a2b027985b69a1f,
+        type: 3}
+      propertyPath: m_NumberOfSteps
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 8234202308007426615, guid: 0ba137bec569a0744a2b027985b69a1f, type: 3}
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 904065371585775425, guid: 0ba137bec569a0744a2b027985b69a1f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3182791800517437891}
+    - targetCorrespondingSourceObject: {fileID: 3743288545677624061, guid: 0ba137bec569a0744a2b027985b69a1f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3410655789527728069}
+    - targetCorrespondingSourceObject: {fileID: 4013468174467459122, guid: 0ba137bec569a0744a2b027985b69a1f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2851944201023131067}
+    - targetCorrespondingSourceObject: {fileID: 4146600230594656012, guid: 0ba137bec569a0744a2b027985b69a1f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6376287095663754055}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ba137bec569a0744a2b027985b69a1f, type: 3}
 --- !u!114 &1162730685603280525 stripped
@@ -2390,6 +2876,78 @@ MonoBehaviour:
 --- !u!224 &1408784306223082758 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8750384646425349566, guid: 0ba137bec569a0744a2b027985b69a1f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7701891647900311736}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1571190862175450695 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9164649758024521471, guid: 0ba137bec569a0744a2b027985b69a1f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7701891647900311736}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1713100668971996871 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9017537270502798975, guid: 0ba137bec569a0744a2b027985b69a1f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7701891647900311736}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!224 &6010391618161530804 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4146600230594656012, guid: 0ba137bec569a0744a2b027985b69a1f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7701891647900311736}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &6417709444569899589 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3743288545677624061, guid: 0ba137bec569a0744a2b027985b69a1f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7701891647900311736}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6657349230364374785 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3927484671175415737, guid: 0ba137bec569a0744a2b027985b69a1f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7701891647900311736}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!224 &6723920079082391690 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4013468174467459122, guid: 0ba137bec569a0744a2b027985b69a1f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7701891647900311736}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7289353789863211453 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1137828521600930053, guid: 0ba137bec569a0744a2b027985b69a1f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7701891647900311736}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!224 &7379569170662254585 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 904065371585775425, guid: 0ba137bec569a0744a2b027985b69a1f,
     type: 3}
   m_PrefabInstance: {fileID: 7701891647900311736}
   m_PrefabAsset: {fileID: 0}
