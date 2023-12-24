@@ -5,14 +5,9 @@ using UnityEngine.UI;
 
 public class PausMenu : MonoBehaviour
 {
-    public bool PausGame;
-
+    private bool PausGame;
     public GameObject PausGameMenu;
-
     public GameObject Player;
-
-    public GameObject PausButton;
-        
     public void Resum()
     {
         PausGameMenu.SetActive(false);
@@ -24,8 +19,6 @@ public class PausMenu : MonoBehaviour
         Player.GetComponentInChildren<MovePlayer>().enabled = true;
 
         Player.GetComponentInChildren<CameraMove>().enabled = true;
-
-        PausButton.GetComponent<Button>().interactable = true;
     }
 
     public void Pause()
@@ -39,9 +32,6 @@ public class PausMenu : MonoBehaviour
         Player.GetComponentInChildren<MovePlayer>().enabled = false;
 
         Player.GetComponentInChildren<CameraMove>().enabled = false;
-
-        PausButton.GetComponent<Button>().interactable = false;
-
     }
 
     public void LoadMenu()
@@ -52,8 +42,6 @@ public class PausMenu : MonoBehaviour
 
         PlayerPrefs.DeleteKey("PlayerChenge");
     }
-
- 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))

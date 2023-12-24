@@ -5,39 +5,24 @@ using UnityEngine;
 public class CharacterInitialization : MonoBehaviour
 {
     public GameObject Zombie;
+    public GameObject Monster;
 
-    public GameObject Monstr;
     private void Awake()
     {
-        
-        if(PlayerPrefs.HasKey("PlayerChenge"))
+        if(PlayerPrefs.HasKey("PlayerChenge")) 
         {
-            int playerChenge = PlayerPrefs.GetInt("PlayerChenge");
-
-            if (playerChenge == 1)
-            {
-                Zombie.SetActive(false);
-
-                Monstr.SetActive(true);
-            }
-            else
+            if(PlayerPrefs.GetString("PlayerChenge") == Zombie.name)
             {
                 Zombie.SetActive(true);
 
-                Monstr.SetActive(false);
+                Monster.SetActive(false);
             }
+            else if(PlayerPrefs.GetString("PlayerChenge") == Monster.name)
+            {
+                Zombie.SetActive(false);
 
+                Monster.SetActive(true);
+            }
         }
-        
-    }
-    void Start()
-    {
-        
-    }
-
-    
-    void Update()
-    {
-        
     }
 }

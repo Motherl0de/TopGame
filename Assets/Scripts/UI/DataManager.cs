@@ -6,28 +6,20 @@ using UnityEngine.UI;
 
 public class DataManager : MonoBehaviour
 {
-    public GameObject ButtonZombie;
-
-    public GameObject ButtonMonstr;
-
     public Button ButtonPlayGame2;
-    public void ChengeMonstr()
+    public void ChengePlayer2(int player)
     {
-        PlayerPrefs.SetInt("PlayerChenge", 1);
-
-        PlayerPrefs.Save();
-
-        ButtonPlayGame2.interactable = true;
-               
-    }
-
-    public void ChengeZonbi()
-    {
-        PlayerPrefs.SetInt("PlayerChenge", 0);
-
+        if( player == 0 )
+        {
+            PlayerPrefs.SetString("PlayerChenge", "Zombie");
+        }
+        else if ( player == 1)
+        {
+            PlayerPrefs.SetString("PlayerChenge", "sk_monster_4");
+        }
         PlayerPrefs.Save();
 
         ButtonPlayGame2.interactable = true;
     }
-     
+
 }

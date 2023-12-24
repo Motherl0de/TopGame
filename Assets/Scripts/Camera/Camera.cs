@@ -11,8 +11,8 @@ public sealed class Camera : MonoBehaviour
     {
         if (_health.currentHP <= 0)
         {
-            if (transform.position.z <= -120f) {
-                //Вызвать меню
+            if (transform.position.z <= -30f) {
+                transform.gameObject.GetComponent<GameOver>().GameOverCat();
                 return;
             }
             
