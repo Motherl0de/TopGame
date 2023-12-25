@@ -26,8 +26,6 @@ public class Loading : MonoBehaviour
 
         async_operation = SceneManager.LoadSceneAsync(1);
 
-        //async_operation.allowSceneActivation = false;
-
         while (!async_operation.isDone)
         {
             LoadingProgress = Mathf.Clamp01(async_operation.progress / 0.9f);

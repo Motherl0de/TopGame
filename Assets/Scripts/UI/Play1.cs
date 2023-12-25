@@ -5,35 +5,20 @@ using UnityEngine.UI;
 
 public class Play1 : MonoBehaviour
 {
-    public GameObject ChengePlayerPanel;
-
-    public GameObject ButtonAGrup1;
-
     public GameObject ButtonPlay2;
 
-    private Button ButtonPlay2Script;
-
-    public void ActivatePanet()
+    public void OffInteractiv()
     {
-        ChengePlayerPanel.SetActive(true);
-
-        ButtonAGrup1.SetActive(false);
-
-        ButtonPlay2Script = ButtonPlay2.GetComponent<Button>();
-
-        ButtonPlay2Script.interactable = false;
-    }
-
-    public void DeactivatePanet()
-    {
-        ChengePlayerPanel.SetActive(false);
-
-        ButtonAGrup1.SetActive(true);
+        ButtonPlay2.GetComponent<Button>().interactable = false;
     }
     public void ExitGame()
     {
         PlayerPrefs.DeleteKey("PlayerChenge");
 
         Application.Quit();
+    }
+    private void Start()
+    {
+        ButtonPlay2.GetComponent<Button>().interactable = false;
     }
 }
