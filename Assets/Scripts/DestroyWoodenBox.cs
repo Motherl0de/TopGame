@@ -11,12 +11,14 @@ public sealed class DestroyWoodenBox : MonoBehaviour
     private GameObject _current;
     private GameObject _next;
     private int _pendingIndex;
+    private WinGame _winGame;
 
     private void Awake()
     {
         _current = _box[0];
         _next = _box[1];
         _pendingIndex = 2;
+        _winGame = FindObjectOfType<WinGame>();
     }
 
     private void OnTriggerStay(Collider other)
@@ -36,6 +38,7 @@ public sealed class DestroyWoodenBox : MonoBehaviour
                 if (_next == _box[2].activeInHierarchy) {
                     _audioPortal.Play();
                     Instantiate(_portal,new Vector3(-9f,9.1f,-10f),Quaternion.identity);
+                    _winGame.StartPortal();
                 }
             }
 
