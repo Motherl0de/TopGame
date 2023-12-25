@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 299784256446217025}
   - component: {fileID: 7864806460694605978}
   - component: {fileID: 5485912672750067881}
+  - component: {fileID: 7029446105668666853}
   m_Layer: 0
   m_Name: WoodenBox 1
   m_TagString: Untagged
@@ -154,6 +155,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!65 &7029446105668666853
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3287389896428785101}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.2229431, y: 0.75877017, z: 1.4517524}
+  m_Center: {x: -0.11147137, y: 0.24347147, z: 0.023184145}
 --- !u!1 &4462820444374613728
 GameObject:
   m_ObjectHideFlags: 0
