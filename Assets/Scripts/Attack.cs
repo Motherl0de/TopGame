@@ -43,7 +43,5 @@ public sealed class Attack : MonoBehaviour
     {
         if (other.gameObject.GetComponent<MoveTourist>()) Health.currentHP += 15;
         if (other.gameObject.CompareTag("Shrub")) Health.TakeDamag(20);
-
-       
     }
 }

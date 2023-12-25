@@ -45,6 +45,7 @@ public sealed class Hunter : MonoBehaviour
         else {
             _attack1.Stop();
             _attack2.Stop();
+            Hit.Stop();
         }
     }
 
