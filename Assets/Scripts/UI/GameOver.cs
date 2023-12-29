@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class GameOver : MonoBehaviour
 {
     public GameObject GameOverPanel;
-    public float scalingDuration = 1f;
+    private float scalingDuration = 1f;
     public GameObject BackToMainMenu;
 
     public void GameOverCat()
